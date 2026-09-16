@@ -1,0 +1,11 @@
+{
+  "geometry": "2100x1400+352+62",
+  "dark": false,
+  "autostart": true,
+  "minimize_to_tray": true,
+  "background": null,
+  "window_alpha": 0.92,
+  "symbol_hotkey": "Ctrl+Shift+G",
+  "snippet_hotkey": "Ctrl+Shift+S",
+  "notes_last_file": "D:\\000MYfile\\workspace\\AI_code_renew\\DSCode\\日程表\\1.6.1\\dist\\data\\notes\\1\\课表.txt"
+}

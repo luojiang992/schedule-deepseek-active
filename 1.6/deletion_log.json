@@ -1,0 +1,77 @@
+{
+  "说明": "记录工作过程中使用 shell 执行的文件删除指令。每次删除操作追加一条: time(时间) / shell(使用的shell) / command(指令) / purpose(期望达成的目的)",
+  "entries": [
+    {
+      "time": "2026-08-30T23:39:11",
+      "shell": "pwsh",
+      "command": "Remove-Item _piptmp\\smokeG, _piptmp\\smokeH -Recurse",
+      "purpose": "清理 GUI 冒烟测试产生的临时数据目录"
+    },
+    {
+      "time": "2026-08-30T23:39:11",
+      "shell": "pwsh",
+      "command": "Remove-Item build -Recurse",
+      "purpose": "清理 PyInstaller 构建中间产物"
+    },
+    {
+      "time": "2026-08-30T23:39:11",
+      "shell": "pwsh",
+      "command": "Remove-Item dist\\data -Recurse",
+      "purpose": "清理 exe 测试运行时在 dist 下产生的 data 数据目录"
+    },
+    {
+      "time": "2026-08-30T23:39:12",
+      "shell": "pwsh",
+      "command": "Remove-Item data, __pycache__ -Recurse",
+      "purpose": "清理源码运行/导入产生的数据目录与 python 缓存"
+    },
+    {
+      "time": "2026-08-30T23:39:59",
+      "shell": "pwsh",
+      "command": "Remove-Item _piptmp\\smokeH -Recurse",
+      "purpose": "清理 exe 冒烟测试临时数据目录"
+    },
+    {
+      "time": "2026-08-30T23:40:35",
+      "shell": "pwsh",
+      "command": "Remove-Item dist\\data, dist\\tools -Recurse",
+      "purpose": "清理 exe 验证运行时在 dist 下自动创建的空 data/tools 文件夹, 保持交付目录仅含 exe"
+    },
+    {
+      "time": "2026-08-31T00:11:08",
+      "shell": "pwsh",
+      "command": "Remove-Item dist\\data, dist\\tools -Recurse",
+      "purpose": "清理 exe 验证运行时自动创建的 data/tools 空文件夹"
+    },
+    {
+      "time": "2026-08-31T00:11:08",
+      "shell": "pwsh",
+      "command": "Remove-Item dist_dbg, build, build_dbg, 日程管理_dbg.spec -Recurse",
+      "purpose": "清理控制台调试版与构建中间产物"
+    },
+    {
+      "time": "2026-08-31T00:11:09",
+      "shell": "pwsh",
+      "command": "Remove-Item data, __pycache__ -Recurse",
+      "purpose": "清理源码运行产生的数据与缓存目录"
+    },
+    {
+      "time": "2026-08-31T00:11:30",
+      "shell": "pwsh",
+      "command": "Remove-Item .sched_selftest_*, .sched_exe_test -Recurse",
+      "purpose": "清理自测产生的临时目录"
+    },
+    {
+      "time": "2026-08-31T00:18:11",
+      "shell": "pwsh",
+      "command": "Remove-Item dist\\data, dist\\tools, build -Recurse",
+      "purpose": "清理 exe 验证运行时自动创建的 data/tools 空文件夹与构建中间产物"
+    },
+    {
+      "time": "2026-08-31T00:18:11",
+      "shell": "pwsh",
+      "command": "Remove-Item _piptmp\\smokeL, .sched_selftest_* -Recurse",
+      "purpose": "清理冒烟与自测临时目录"
+    }
+  ]
+}
